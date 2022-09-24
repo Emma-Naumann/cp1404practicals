@@ -28,10 +28,12 @@ def main():
 
 
 def print_temperature_celsius(celsius):
+    """Print converted temperature in celsius."""
     print(f"Result: {celsius:.2f} C")
 
 
 def print_temperature_fahrenheit(fahrenheit):
+    """Print converted temperature in fahrenheit."""
     print("Result: {:.2f} F".format(fahrenheit))
 
 

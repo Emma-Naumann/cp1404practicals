@@ -15,16 +15,24 @@ def main():
         if choice == "C":
             celsius = float(input("Celsius: "))
             fahrenheit = convert_celsius_to_fahrenheit(celsius)
-            print("Result: {:.2f} F".format(fahrenheit))
+            print_temperature_fahrenheit(fahrenheit)
         elif choice == "F":
             fahrenheit = float(input("Fahrenheit: "))
             celsius = convert_fahrenheit_to_celsius(fahrenheit)
-            print(f"Result: {celsius:.2f} C")
+            print_temperature_celsius(celsius)
         else:
             print("Invalid option")
         print(MENU)
         choice = input(">>> ").upper()
     print("Thank you.")
+
+
+def print_temperature_celsius(celsius):
+    print(f"Result: {celsius:.2f} C")
+
+
+def print_temperature_fahrenheit(fahrenheit):
+    print("Result: {:.2f} F".format(fahrenheit))
 
 
 def convert_fahrenheit_to_celsius(fahrenheit):

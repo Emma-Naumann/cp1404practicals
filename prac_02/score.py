@@ -11,12 +11,12 @@ def main():
     while user_score < 0 or user_score > 100:
         print("Invalid score. Try again.")
         user_score = int(input("Enter score: "))
-    message = determine_score_category(user_score)
-    print(f"A score of {user_score} is {message}.")
+    user_score_message = determine_score_category(user_score)
+    print(f"A score of {user_score} is {user_score_message}.")
 
     random_score = random.randint(0, 100)
-    message = determine_score_category(random_score)
-    print(f"A score of {random_score} is {message}.")
+    random_score_message = determine_score_category(random_score)
+    print(f"A score of {random_score} is {random_score_message}.")
 
 
 def determine_score_category(score):

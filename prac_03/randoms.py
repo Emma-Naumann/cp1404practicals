@@ -25,3 +25,13 @@ Random Numbers
 
 
 # print(random.uniform(2.5, 5.5))  # line 3
+# 4.081339707464739
+# 4.411321462618175
+# 2.8927198542641888
+# Smallest: 2.5
+# Largest: 5.5 (largest number exclusive, but could be inclusive depending on rounding)
+
+
+# produce a random number between 1 and 100 inclusive
+import random
+print(random.randint(1, 100))

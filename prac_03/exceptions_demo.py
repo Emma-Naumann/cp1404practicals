@@ -7,6 +7,15 @@ Answer the following questions:
 3. Could you change the code to avoid the possibility of a ZeroDivisionError?
 """
 
+
+# Question Answers
+# 1. A ValueError will occur when either numerator or denominator is a string.
+
+# 2. A ZeroDivisionError occurs when denominator = 0.
+
+# 3. Use an error-checking pattern for the denominator to ask for input until != 0.
+
+# Code updated with Question 3 solution
 try:
     numerator = int(input("Enter the numerator: "))
     denominator = int(input("Enter the denominator: "))
@@ -20,12 +29,3 @@ except ValueError:
 except ZeroDivisionError:
     print("Cannot divide by zero!")
 print("Finished.")
-
-# Question Answers
-# 1. A ValueError will occur when either numerator or denominator is a string.
-
-# 2. A ZeroDivisionError occurs when denominator = 0.
-
-# 3. Use an error-checking pattern for the denominator to ask for input until != 0.
-
-

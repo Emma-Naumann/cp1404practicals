@@ -4,17 +4,17 @@ CP1404 Practical 3
 Files
 """
 
-# # Question 1
-# name = input("Name: ")
-# with open("name.txt", "w") as out_file:
-#     print(name, file=out_file)
-#
-#
-# # Question 2
-# in_file = open("name.txt")
-# name = in_file.read().strip()
-# in_file.close()
-# print("Your name is", name)
+# Question 1
+name = input("Name: ")
+with open("name.txt", "w") as out_file:
+    print(name, file=out_file)
+
+
+# Question 2
+in_file = open("name.txt")
+name = in_file.read().strip()
+in_file.close()
+print("Your name is", name)
 
 # Question 3
 in_file = open("numbers.txt")

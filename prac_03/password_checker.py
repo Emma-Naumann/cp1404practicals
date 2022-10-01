@@ -21,7 +21,7 @@ def main():
     if SPECIAL_CHARS_REQUIRED:
         print(f"\tand 1 or more special characters: {SPECIAL_CHARACTERS}")
         password = input("> ")
-    while not is_valid_password(password):
+    while not is_valid_password(password):  # Safe to ignore warning
         print("Invalid password!")
         password = input("> ")
     print(f"Your {len(password)}-character password is valid: {password}")

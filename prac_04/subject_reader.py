@@ -1,7 +1,7 @@
 """
 Emma Naumann
 CP1404 Practical 4
-Data file -> lists program
+Data file and lists program
 """
 
 FILENAME = "subject_data.txt"

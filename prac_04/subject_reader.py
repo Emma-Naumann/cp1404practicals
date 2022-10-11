@@ -8,7 +8,7 @@ FILENAME = "subject_data.txt"
 
 
 def main():
-    """Read subject data and display formatted."""
+    """Read subject data and display formatted data."""
     data = get_data()
     display_subjects(data)
 

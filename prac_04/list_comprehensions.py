@@ -1,5 +1,6 @@
 """
-CP1404/CP5632 Practical
+Emma Naumann
+CP1404 Practical 4
 List comprehensions
 """
 

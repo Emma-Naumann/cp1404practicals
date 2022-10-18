@@ -47,7 +47,8 @@ def display_results(champion_to_count, countries):
     for champion, count in champion_to_count.items():
         print(f"{champion} {count}")
     print(f"These {len(countries)} countries have won Wimbledon:")
-    print(", ".join(country for country in sorted(countries)))
+    # print(", ".join(country for country in sorted(countries)))
+    print(", ".join(sorted(countries)))
 
 
 main()

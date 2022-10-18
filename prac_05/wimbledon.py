@@ -1,6 +1,9 @@
 """
 Emma Naumann
 CP1404 Practical 5
+
+Read and display data about the champions and countries of Wimbledon
+
 Estimate: 30 minutes
 Actual: 49 minutes
 """

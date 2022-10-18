@@ -2,7 +2,8 @@
 Emma Naumann
 CP1404 Practical 5
 
-Word occurrences
+Word occurrences counts the occurrences of a word in a user input
+
 Estimate: 30 minutes
 Actual: 15 minutes
 """

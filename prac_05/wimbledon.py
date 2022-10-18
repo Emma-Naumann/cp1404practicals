@@ -6,8 +6,8 @@ Actual: 49 minutes
 """
 
 FILENAME = "wimbledon.csv"
-INDEX_COUNTRY = 1
-INDEX_CHAMPION = 2
+COUNTRY_INDEX = 1
+CHAMPION_INDEX = 2
 
 
 def main():
@@ -33,11 +33,11 @@ def process_records(records):
     champion_to_count = {}
     countries = set()
     for record in records:
-        countries.add(record[INDEX_COUNTRY])
+        countries.add(record[COUNTRY_INDEX])
         try:
-            champion_to_count[record[INDEX_CHAMPION]] += 1
+            champion_to_count[record[CHAMPION_INDEX]] += 1
         except KeyError:
-            champion_to_count[record[INDEX_CHAMPION]] = 1
+            champion_to_count[record[CHAMPION_INDEX]] = 1
     return champion_to_count, countries
 
 

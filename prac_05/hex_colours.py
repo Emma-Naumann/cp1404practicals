@@ -9,7 +9,7 @@ NAME_TO_CODE = {"aliceblue": "#f0f8ff", "amaranth": "#e52b50", "amethyst": "#996
                 "blue2": "#0000ee", "boysenberry": "#873260"}
 print(NAME_TO_CODE)
 
-colour_name = input("Enter short state: ").lower()
+colour_name = input("Enter colour name: ").lower()
 while colour_name != "":
     try:
         print(f"The colour {colour_name} has hexadecimal code {NAME_TO_CODE[colour_name]}")

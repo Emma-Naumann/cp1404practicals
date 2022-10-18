@@ -2,7 +2,7 @@
 Emma Naumann
 CP1404 Practical 5
 
-Word occurences
+Word occurrences
 Estimate: 30 minutes
 Actual: 15 minutes
 """

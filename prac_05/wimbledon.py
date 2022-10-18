@@ -2,7 +2,7 @@
 Emma Naumann
 CP1404 Practical 5
 Estimate: 30 minutes
-Actual:
+Actual: 49 minutes
 """
 
 FILENAME = "wimbledon.csv"

@@ -4,7 +4,7 @@ CP1404 Practical 6
 Intermediate Exercises - Programming Language
 
 Estimated: 40 minutes (12:22pm)
-Actual:
+Actual: 25 minutes (12:47pm)
 """
 
 

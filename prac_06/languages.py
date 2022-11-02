@@ -3,8 +3,8 @@ Emma Naumann
 CP1404 Practical 6 - Intermediate Exercises
 (with programming_language.py file)
 
-Estimate: 40 minutes (12:22pm) (12:45pm lunch break)
-Actual:
+Estimate: 40 minutes (12:22pm)
+Actual: 25 minutes (12:47pm)
 """
 
 

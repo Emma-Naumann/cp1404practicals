@@ -25,7 +25,8 @@ def main():
             print(f"{new_guitar.name} added.")
 
     display_guitars(guitars)
-    # guitars = add_guitars(guitars)
+    add_guitars(guitars)
+    # display_guitars(guitars)
 
     # with open(FILENAME, "w") as out_file:
     #     for guitar in guitars:
@@ -35,7 +36,7 @@ def main():
 def display_guitars(guitars):
     """Display formatted guitar details."""
     guitars.sort()
-    print("These are my guitars:")
+    print("These are the guitars:")
     for i, guitar in enumerate(guitars, 1):
         vintage_string = " (vintage)" if guitar.is_vintage() else ""
         print(f"Guitar {i}: {guitar.name:30} ({guitar.year}), worth ${guitar.cost:10,.2f}{vintage_string}")
@@ -43,15 +44,15 @@ def display_guitars(guitars):
 
 def add_guitars(guitars):
     """Add new user guitar to guitars list."""
+    print("Now add your guitars to the list!")
     name = input("Name: ")
     while name != "":
         year = int(input("Year: "))
-        cost = float(input("Cost: $"))
+        cost = float(input("Cost: $ "))
         new_guitar = Guitar(name, year, cost)
         guitars.append(new_guitar)
         print(f"{new_guitar} added.")
         name = input("Name: ")
-    return guitars
 
 
 main()

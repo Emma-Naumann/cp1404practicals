@@ -26,11 +26,10 @@ def main():
 
     display_guitars(guitars)
     add_guitars(guitars)
-    # display_guitars(guitars)
 
-    # with open(FILENAME, "w") as out_file:
-    #     for guitar in guitars:
-    #         print(guitar[0], guitar[1], guitar[2])
+    with open(FILENAME, "w") as out_file:
+        for guitar in guitars:
+            print(f"{guitar.name},{guitar.year},{guitar.cost}", file=out_file)
 
 
 def display_guitars(guitars):

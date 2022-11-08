@@ -1,10 +1,11 @@
 # CP1404 Practicals Repository
 
-## Emma Naumann
+## By Emma Naumann
 
 ### Overview
 
-* My name is Emma, and this CP1404 practicals repository contains weekly assignment practicals completed in Python.
+* My name is Emma, and I am in my first year of a Bachelor of Advanced Science.
+* This CP1404 practicals repository contains weekly assignment practicals completed in Python.
 
 ### 3 Main Principles of "Clean Code"
 

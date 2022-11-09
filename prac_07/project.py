@@ -5,13 +5,14 @@ Do from scratch exercises - project management program
 
 Class program
 """
+import datetime
 
 
 class Project:
-    """Project class for storing details of a project."""
+    """Project class for storing details of a Project."""
 
     def __init__(self, name="", start_date=0, priority=0, cost=0, completion_percentage=0):
-        """Initialise a Guitar."""
+        """Initialise a Project."""
         self.name = name
         self.start_date = start_date
         self.priority = priority

@@ -7,9 +7,7 @@ Estimate: 1 hour
 Actual:
 """
 import datetime
-from operator import itemgetter
 from prac_07.project import Project
-from datetime import date
 
 MENU = "- (L)oad projects \n- (S)ave projects \n- (D)isplay projects \n- (F)ilter projects by date" \
        "\n- (A)dd new project \n- (U)pdate project \n- (Q)uit \n>>> "
@@ -57,11 +55,9 @@ def load_projects(filename):
         in_file.readline()
         for line in in_file:
             parts = line.strip().split("\t")
-            # TODO: fix start date formatting
             start_date = datetime.datetime.strptime(parts[1], "%d/%m/%Y").date()
             new_project = Project(parts[0], start_date, int(parts[2]), float(parts[3]), parts[4])
             projects.append(new_project)
-            # print(new_project)
     return projects
 
 
@@ -99,7 +95,6 @@ def add_project(projects):
     """Add new project to projects after error-checking user input."""
     print("Let's add a new project")
     name = input("Name: ")
-    # TODO: fix start date formatting
     start_date_string = input("Start date (dd/mm/yy): ")
     start_date = datetime.datetime.strptime(start_date_string, "%d/%m/%Y").date()
     priority = int(input("Priority: "))
@@ -137,8 +132,11 @@ def update_project(projects):
             else:
                 # safe to ignore reference warning
                 # TODO: update project with new_percentage and priority
-                projects[project_to_update_index][4] = new_percentage
-                print(projects[project_to_update_index])
+                Project(project_to_update_index).completion_percentage = new_percentage
+                # chosen_project = projects[project_to_update_index]
+                # chosen_project.completion_percentage(int(new_percentage))
+                # print(chosen_project)
+                # print(projects[project_to_update_index])
                 is_valid_percentage = True
         except ValueError:
             print("Invalid input; enter a valid number")

@@ -4,7 +4,7 @@ CP1404 Practical 7
 Do from scratch exercises - project management program
 
 Estimate: 1 hour
-Actual:
+Actual: 2 hours
 """
 import datetime
 from prac_07.project import Project

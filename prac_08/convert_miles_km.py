@@ -13,7 +13,7 @@ __author__ = 'Emma Naumann'
 MILES_TO_KM = 1.60934
 
 
-class ConvertMilesToKilometres(App):
+class ConvertMilesToKilometresApp(App):
     """ConvertMilesToKilometres is a Kivy App for converting distance."""
     def build(self):
         """Build the Kivy app from the kv file."""
@@ -42,4 +42,4 @@ class ConvertMilesToKilometres(App):
             return 0
 
 
-ConvertMilesToKilometres().run()
+ConvertMilesToKilometresApp().run()

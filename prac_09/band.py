@@ -13,8 +13,6 @@ class Band(Musician):
     def __str__(self):
         """Return a string representation of a Band."""
         return f"{self.band_name} ({[musician for musician in self.musicians]})"
-        # return f"{self.band_name}"
-
 
     def __repr__(self):
         """Return a string representation of a Musician, showing the variables."""
@@ -23,11 +21,9 @@ class Band(Musician):
     def add(self, musician):
         """Add a musician to band."""
         self.musicians.append(musician)
-    #
-    # def play(self):
-    #     """Return a string showing the musician playing their first (or no) instrument."""
-    #
-    #     if not self.instruments:
-    #         return f"{self.musician_name} needs an instrument!"
-    #     return f"{self.musician_name} is playing: {self.instruments[0]}"
+
+    def play(self):
+        """Return a string showing the musician playing their first (or no) instrument."""
+        for musician in self.musicians:
+            super().play()
 

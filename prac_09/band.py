@@ -26,4 +26,3 @@ class Band(Musician):
         """Return a string showing the musician playing their first (or no) instrument."""
         for musician in self.musicians:
             super().play()
-
